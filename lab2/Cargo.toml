@@ -1,0 +1,22 @@
+[package]
+name = "lab2"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "lab2"
+path = "src/main.rs"
+
+[dependencies]
+eframe = "0.31"
+egui = "0.31"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+hex = "0.4"
+aes = "0.8"
+cbc = { version = "0.1", features = ["alloc"] }
+rand = "0.8"
+sysinfo = "0.32"
+base64 = "0.22"
+libc = "0.2"
