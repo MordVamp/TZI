@@ -30,3 +30,8 @@ lab1/test_signature_pg2.md
 # OS
 .DS_Store
 Thumbs.db
+
+# Lab3 screenshots
+lab3/screenshots/
+
+# Ignore lab3 draft reports if needed (keep v1)

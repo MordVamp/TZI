@@ -1,0 +1,31 @@
+[package]
+name = "lab3"
+version = "0.1.0"
+edition = "2021"
+description = "Лабораторная работа №3 — Криптографические алгоритмы (на основе CryptoCore)"
+
+[[bin]]
+name = "lab3"
+path = "src/main.rs"
+
+[dependencies]
+aes     = "0.8.0"
+cipher  = "0.4.0"
+hex     = "0.4.0"
+anyhow  = "1.0.0"
+thiserror = "2.0"
+block-padding = "0.3.0"
+getrandom = { version = "0.3", features = ["std"] }
+
+[dev-dependencies]
+assert_cmd = "2.0.0"
+predicates = "2.0.0"
+tempfile   = "3.3.0"
+
+[[test]]
+name = "integration_tests"
+path = "tests/integration_tests.rs"
+
+[[test]]
+name = "modes_tests"
+path = "tests/modes_tests.rs"
